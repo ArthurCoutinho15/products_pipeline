@@ -93,7 +93,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
     - ${AIRFLOW_PROJ_DIR:-.}/data:/opt/airflow/data
-    - D:/Projetos/airflow/wind_energy:/opt/airflow/external_scripts
+    - D:/Projetos/airflow/wind_energy/src:/opt/airflow/external_scripts
 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
